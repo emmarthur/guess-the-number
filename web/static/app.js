@@ -106,4 +106,13 @@ formEl.addEventListener("submit", async (event) => {
 
 btnNewEl.addEventListener("click", () => startGame());
 
+document.querySelectorAll("[data-help-jump]").forEach((btn) => {
+  btn.addEventListener("click", () => {
+    document.getElementById("help-heading")?.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
+  });
+});
+
 startGame();

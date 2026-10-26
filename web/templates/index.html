@@ -24,6 +24,7 @@
           I'm thinking of a number from <strong>{{ min_number }}</strong> to
           <strong>{{ max_number }}</strong>. You have <strong>{{ max_guesses }}</strong> tries.
         </p>
+        <button type="button" class="help-jump-btn" data-help-jump>Help</button>
       </header>
 
       <section class="card game-card">
@@ -63,12 +64,22 @@
         </div>
       </section>
 
-      <section class="card help-card">
-        <h2>How it works</h2>
+      <section class="card help" aria-labelledby="help-heading">
+        <h2 id="help-heading">Help</h2>
+        <h3>About this app</h3>
+        <p>
+          A classic <strong>number-guessing game</strong>. The app picks a secret integer between
+          {{ min_number }} and {{ max_number }}. You narrow it down using higher/lower feedback until
+          you guess correctly or use all {{ max_guesses }} attempts.
+        </p>
+        <h3>How to play</h3>
         <ul>
-          <li>Each guess tells you if the secret number is higher or lower.</li>
-          <li>Use the hints to narrow the range until you hit the target or run out of tries.</li>
-          <li>Start a new round anytime with <strong>Play again</strong>.</li>
+          <li>Enter a whole number in the box and press <strong>Guess</strong>.</li>
+          <li>
+            <strong>Last hint</strong> shows whether your guess was too low, too high, or correct.
+          </li>
+          <li>Watch <strong>Guesses left</strong> — when it hits zero, the secret number is revealed.</li>
+          <li>Use <strong>Play again</strong> to start a fresh round with a new secret number.</li>
         </ul>
       </section>
     </main>

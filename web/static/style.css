@@ -199,17 +199,50 @@ body {
   font-size: 1.1rem;
 }
 
-.help-card h2 {
+.help {
+  font-size: 0.9rem;
+  line-height: 1.55;
+  color: var(--text-muted);
+}
+
+.help h2 {
   font-family: var(--font-display);
   font-size: 1.1rem;
+  color: var(--text);
   margin: 0 0 0.75rem;
 }
 
-.help-card ul {
-  margin: 0;
+.help h3 {
+  font-size: 0.95rem;
+  color: #ede9fe;
+  margin: 1rem 0 0.35rem;
+}
+
+.help strong {
+  color: #c4b5fd;
+}
+
+.help ul {
+  margin: 0.25rem 0 0;
   padding-left: 1.15rem;
-  color: var(--text-muted);
-  line-height: 1.55;
+}
+
+.help-jump-btn {
+  display: inline-block;
+  margin-top: 1rem;
+  font-family: inherit;
+  font-size: 0.875rem;
+  font-weight: 600;
+  padding: 0.45rem 1rem;
+  border-radius: 9999px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--text);
+  cursor: pointer;
+}
+
+.help-jump-btn:hover {
+  background: rgba(255, 255, 255, 0.14);
 }
 
 .sr-only {
